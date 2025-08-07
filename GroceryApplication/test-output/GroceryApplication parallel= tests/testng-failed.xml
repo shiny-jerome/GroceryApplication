@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [GroceryApplication parallel= tests]">
+  <listeners>
+    <listener class-name="listeners.ExtentReport"/>
+  </listeners>
+  <test thread-count="2" name="Chrome Test(failed)">
+    <classes>
+      <class name="testCase.ManageNewsTest">
+        <methods>
+          <include name="updateMessage"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="createMessage"/>
+          <include name="deleteMessage"/>
+        </methods>
+      </class> <!-- testCase.ManageNewsTest -->
+      <class name="testCase.LoginPageTest">
+        <methods>
+          <include name="verifyDashboardTextwhileLoginwithValidCredentials"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCase.LoginPageTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [GroceryApplication parallel= tests] -->

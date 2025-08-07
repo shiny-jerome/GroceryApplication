@@ -1,0 +1,11 @@
+testCase\BaseClass.class
+listeners\ExtentReport.class
+testCase\CategoryTest.class
+testCase\ManageNewsTest.class
+testCase\ManageFooterTest.class
+testCase\AdminUserTest.class
+testCase\ManageContactTest.class
+testCase\LoginPageTest.class
+listeners\Retry.class
+testCase\Sub_CategoryTest.class
+listeners\RetryListener.class

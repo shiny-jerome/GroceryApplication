@@ -1,0 +1,13 @@
+elementRepository\ManageFooterPage.class
+elementRepository\LoginPage.class
+utilities\GeneralUtility.class
+utilities\ScreenShotCapture.class
+utilities\FakerUtility.class
+utilities\ExcelUtility.class
+elementRepository\Adminpage.class
+elementRepository\ManageContactPage.class
+elementRepository\CategoryPage.class
+elementRepository\ManageNewsPage.class
+elementRepository\Sub_CategoryPage.class
+elementRepository\AdminUserPage.class
+utilities\WaitUtility.class
