@@ -4,11 +4,13 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Sample {
   @Test
-  public void f() {
+  @Parameters("browser")
+  public void f(String browsername) {
 	  WebDriver driver=new ChromeDriver();
 		 driver.get("https://www.google.com");
 		 driver.manage().window().maximize();
