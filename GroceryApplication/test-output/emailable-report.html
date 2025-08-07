@@ -8,51 +8,112 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">GroceryApplication</th></tr>
-<tr><td><a href="#t0">ChromeTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">37,149</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">116</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GroceryApplication</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCase.ManageNewsTest</td><td><a href="#m0">verifyAlertMsgWhileNewsIsCreatedSuccessfully</a></td><td rowspan="1">1754154307432</td><td rowspan="1">11351</td></tr><tr class="failedeven"><td><a href="#m1">verifyAlertMsgWhileNewsIsSearchedSuccessfully</a></td><td rowspan="1">1754154336300</td><td rowspan="1">1769</td></tr><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testCase.ManageNewsTest</td><td><a href="#m2">verifyAlertMsgWhileNewsIsDeletedSuccessfully</a></td><td rowspan="1">1754154330048</td><td rowspan="1">2449</td></tr><tr class="passedeven"><td><a href="#m3">verifyAlertMsgWhileNewsIsUpdatedSuccessfully</a></td><td rowspan="1">1754154323327</td><td rowspan="1">2643</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">testCase.ManageFooterTest</td><td><a href="#m0">afterMethod</a></td><td rowspan="1">1754562309187</td><td rowspan="1">8</td></tr><tr class="failedeven"><td><a href="#m1">beforeMethod</a></td><td rowspan="1">1754562309156</td><td rowspan="1">-1754562309156</td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testCase.ManageFooterTest</td><td><a href="#m2">verifyUpdateMsgWhileFooterTextIsUpdatedSuccessfully</a></td><td rowspan="1">1754562309178</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>ChromeTest</h2><h3 id="m0">testCase.ManageNewsTest#verifyAlertMsgWhileNewsIsCreatedSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: News Created Successfully expected [News Created Successfully] but found [×
-Alert!
-News Created Successfully]
-	at testCase.ManageNewsTest.verifyAlertMsgWhileNewsIsCreatedSuccessfully(ManageNewsTest.java:29)
+<h2>Default test</h2><h3 id="m0">testCase.ManageFooterTest#afterMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=verifyUpdateMsgWhileFooterTextIsUpdatedSuccessfully status=SKIP method=ManageFooterTest.verifyUpdateMsgWhileFooterTextIsUpdatedSuccessfully()[pri:0, instance:testCase.ManageFooterTest@408d971b] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.quit()&quot; because &quot;this.driver&quot; is null
+	at testCase.BaseClass.afterMethod(BaseClass.java:65)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:805)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:623)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCase.ManageNewsTest#verifyAlertMsgWhileNewsIsSearchedSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
-  (Session info: chrome=138.0.7204.184)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8d36737df7f802de591f4108a96904e1, getElementText {id=f.B983950F3A339AC833891F8A2E66E496.d.D00D5FDC084FEE0B4E9274F4E32E7EA9.e.42}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.184, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Shiny Anderson\App...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64767}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64767/devtoo..., se:cdpVersion: 138.0.7204.184, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8d36737df7f802de591f4108a96904e1)] -&gt; xpath: //table/tbody/tr[1]/td[1]]
-Session ID: 8d36737df7f802de591f4108a96904e1
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at elementRepository.ManageNewsPage.getSearchMessage(ManageNewsPage.java:106)
-	at testCase.ManageNewsTest.verifyAlertMsgWhileNewsIsSearchedSuccessfully(ManageNewsTest.java:68)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCase.ManageFooterTest#beforeMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in C:\Users\Shiny Anderson\AppData\Local\Temp\testng-eclipse--402876240\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCase.ManageNewsTest#verifyAlertMsgWhileNewsIsDeletedSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCase.ManageNewsTest#verifyAlertMsgWhileNewsIsUpdatedSuccessfully</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCase.ManageFooterTest#verifyUpdateMsgWhileFooterTextIsUpdatedSuccessfully</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method beforeMethod but has not been marked @Optional or defined
+in C:\Users\Shiny Anderson\AppData\Local\Temp\testng-eclipse--402876240\testng-customsuite.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
