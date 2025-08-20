@@ -20,5 +20,6 @@ public class Sample {
 		 System.out.println("Page source="+driver.getPageSource()); 
 		 System.out.println("Page title="+driver.getTitle()); 
 		 System.out.println("Current url="+driver.getCurrentUrl()); 
+	  System.out.println("Current url="+driver.getCurrentUrl()); 
   }
 }
